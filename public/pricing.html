@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Clipzaar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <i class="fas fa-video logo-icon"></i>
+                    <span class="logo-text">Clipzaar</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="shortener.html" class="nav-item">Shortener</a>
+                <a href="pricing.html" class="nav-item" style="color: var(--primary-purple-light);">Pricing</a>
+                <a href="about.html" class="nav-item">About</a>
+            </div>
+            <div class="nav-auth">
+                <a href="login.html" class="sign-in-btn">Sign in</a>
+                <a href="register.html" class="sign-up-btn">Sign up - It's FREE</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    SIMPLE & TRANSPARENT PRICING
+                </div>
+                <h1 class="hero-title">
+                    Choose Your Plan
+                </h1>
+                <p class="hero-subtitle">
+                    Start for free and upgrade as you grow. No hidden fees, cancel anytime.
+                </p>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <div class="pricing-container">
+                <div class="pricing-grid">
+                    <!-- Free Plan -->
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3>Free</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">0</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <p>Perfect for getting started</p>
+                        </div>
+                        
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>3 videos per month</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Up to 10 minutes per video</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>3 clips per video</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>AI-generated titles & hashtags</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>720p quality</span>
+                            </div>
+                            <div class="feature disabled">
+                                <i class="fas fa-times"></i>
+                                <span>Priority processing</span>
+                            </div>
+                            <div class="feature disabled">
+                                <i class="fas fa-times"></i>
+                                <span>Custom branding</span>
+                            </div>
+                        </div>
+                        
+                        <button class="plan-button free">
+                            Get Started Free
+                        </button>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="plan-header">
+                            <h3>Pro</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">19</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <p>For content creators & businesses</p>
+                        </div>
+                        
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>50 videos per month</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Up to 2 hours per video</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>10 clips per video</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>AI-generated titles & hashtags</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>1080p quality</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Priority processing</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Custom branding</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Advanced analytics</span>
+                            </div>
+                        </div>
+                        
+                        <button class="plan-button pro">
+                            Start Pro Trial
+                        </button>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3>Enterprise</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <p>For teams & agencies</p>
+                        </div>
+                        
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Unlimited videos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Unlimited duration</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Unlimited clips per video</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>AI-generated titles & hashtags</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>4K quality</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Priority processing</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Custom branding</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Team collaboration</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>API access</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Dedicated support</span>
+                            </div>
+                        </div>
+                        
+                        <button class="plan-button enterprise">
+                            Contact Sales
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Everything you need to know about our pricing and plans</p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Can I change my plan anytime?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate the billing accordingly.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What happens if I exceed my plan limits?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you exceed your monthly limits, you'll be prompted to upgrade your plan. We'll never charge you unexpectedly - you're always in control.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Do you offer refunds?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a 30-day money-back guarantee for all paid plans. If you're not satisfied, contact us for a full refund.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>What video formats do you support?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We support all major video formats including MP4, AVI, MOV, MKV, WMV, FLV, and WEBM. We also support YouTube URLs for direct processing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Plan button functionality
+        document.querySelectorAll('.plan-button').forEach(button => {
+            button.addEventListener('click', () => {
+                if (button.classList.contains('free')) {
+                    window.location.href = 'register.html';
+                } else if (button.classList.contains('pro')) {
+                    window.location.href = 'register.html';
+                } else if (button.classList.contains('enterprise')) {
+                    window.location.href = 'about.html#contact';
+                }
+            });
+        });
+    </script>
+
+    <style>
+        .pricing-section {
+            padding: 4rem 2rem;
+        }
+
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border-primary);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            position: relative;
+            transition: all var(--transition-normal);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .pricing-card.popular {
+            border-color: var(--primary-purple);
+            transform: scale(1.05);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .plan-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .plan-header h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .price {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .currency {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        .amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .period {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .plan-header p {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .plan-features {
+            margin-bottom: 2rem;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.875rem;
+        }
+
+        .feature i {
+            width: 16px;
+            color: var(--primary-purple);
+        }
+
+        .feature.disabled {
+            opacity: 0.5;
+        }
+
+        .feature.disabled i {
+            color: var(--text-muted);
+        }
+
+        .plan-button {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 0.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+        }
+
+        .plan-button.free {
+            background: var(--bg-input);
+            color: var(--text-primary);
+            border: 2px solid var(--border-secondary);
+        }
+
+        .plan-button.free:hover {
+            background: var(--bg-secondary);
+            border-color: var(--primary-purple);
+        }
+
+        .plan-button.pro {
+            background: linear-gradient(135deg, var(--primary-purple), var(--primary-purple-dark));
+            color: white;
+        }
+
+        .plan-button.pro:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+        }
+
+        .plan-button.enterprise {
+            background: linear-gradient(135deg, var(--secondary-blue), var(--primary-purple));
+            color: white;
+        }
+
+        .plan-button.enterprise:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .faq-section {
+            padding: 4rem 2rem;
+            background: var(--bg-secondary);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-grid {
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-primary);
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all var(--transition-fast);
+        }
+
+        .faq-question:hover {
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        .faq-question h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .faq-question i {
+            color: var(--primary-purple);
+            transition: transform var(--transition-normal);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-normal);
+        }
+
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.popular {
+                transform: none;
+            }
+        }
+    </style>
+</body>
+</html>
+

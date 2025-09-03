@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Shortener - Clipzaar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <i class="fas fa-video logo-icon"></i>
+                    <span class="logo-text">Clipzaar</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="shortener.html" class="nav-item" style="color: var(--primary-purple-light);">Shortener</a>
+                <a href="pricing.html" class="nav-item">Pricing</a>
+                <a href="about.html" class="nav-item">About</a>
+            </div>
+            <div class="nav-auth" id="nav-auth">
+                <a href="login.html" class="sign-in-btn" id="sign-in-link">Sign in</a>
+                <a href="register.html" class="sign-up-btn" id="sign-up-link">Sign up - It's FREE</a>
+                <div class="user-menu hidden" id="user-menu">
+                    <span class="user-name" id="user-name"></span>
+                    <button class="logout-btn" id="logout-btn">Logout</button>
+                </div>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    AI-POWERED VIDEO SHORTENER
+                </div>
+                <h1 class="hero-title">
+                    Turn Long Videos into Viral Clips
+                </h1>
+                <p class="hero-subtitle">
+                    Upload your video or paste a YouTube link. Our AI will create engaging short clips with titles, hashtags, and descriptions.
+                </p>
+                
+                <!-- Video Processing Section -->
+                <div class="shortener-container">
+                    <div class="upload-options">
+                        <div class="option-card active" id="url-option">
+                            <div class="option-header">
+                                <i class="fas fa-link"></i>
+                                <h3>YouTube URL</h3>
+                            </div>
+                            <p>Paste a YouTube video link</p>
+                        </div>
+                        
+                        <div class="option-card" id="upload-option">
+                            <div class="option-header">
+                                <i class="fas fa-upload"></i>
+                                <h3>Upload Video</h3>
+                            </div>
+                            <p>Upload your video file</p>
+                        </div>
+                    </div>
+                    
+                    <!-- URL Input -->
+                    <div class="input-method" id="url-input-method">
+                        <div class="input-container">
+                            <div class="video-input-wrapper">
+                                <i class="fas fa-link input-icon"></i>
+                                <input 
+                                    type="url" 
+                                    id="youtube-url" 
+                                    placeholder="Paste YouTube URL here..."
+                                    class="video-input"
+                                >
+                            </div>
+                            <button class="process-btn" id="process-url-btn">
+                                <i class="fas fa-magic"></i>
+                                Process Video
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- File Upload -->
+                    <div class="input-method hidden" id="file-input-method">
+                        <div class="upload-area" id="upload-area">
+                            <div class="upload-content">
+                                <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                                <h3>Drop your video here</h3>
+                                <p>or click to browse files</p>
+                                <small>Supports: MP4, AVI, MOV, MKV, WMV, FLV, WEBM (Max 500MB)</small>
+                            </div>
+                            <input type="file" id="video-file" accept="video/*" hidden>
+                        </div>
+                        <button class="process-btn hidden" id="process-file-btn">
+                            <i class="fas fa-magic"></i>
+                            Process Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section hidden" id="results-section">
+            <div class="results-container">
+                <div class="section-header">
+                    <h2>Your Clips Are Ready!</h2>
+                    <p>AI-generated short clips with titles, hashtags, and descriptions</p>
+                </div>
+                
+                <div class="video-info" id="video-info">
+                    <!-- Video information will be populated here -->
+                </div>
+                
+                <div class="clips-grid" id="clips-grid">
+                    <!-- Generated clips will be populated here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Processing Modal -->
+    <div id="processing-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="processing-animation">
+                <div class="spinner"></div>
+            </div>
+            <h3>Processing Your Video</h3>
+            <p id="processing-status">Preparing to process video...</p>
+            <div class="progress-steps">
+                <div class="step active" id="step-1">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Downloading</span>
+                </div>
+                <div class="step" id="step-2">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Creating Clips</span>
+                </div>
+                <div class="step" id="step-3">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Generating Content</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Authentication Required Modal -->
+    <div id="auth-required-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Authentication Required</h3>
+            </div>
+            <p>Please sign in or create an account to use the video shortener.</p>
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                <a href="login.html" class="auth-submit" style="flex: 1; text-align: center; text-decoration: none;">Sign In</a>
+                <a href="register.html" class="auth-submit" style="flex: 1; text-align: center; text-decoration: none; background: var(--secondary-blue);">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="shortener.js"></script>
+</body>
+</html>
+
