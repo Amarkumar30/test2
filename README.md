@@ -24,9 +24,7 @@ A modern AI-powered video clipping tool that transforms long videos into viral s
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd clipzaar
-   ```
+
 
 2. **Install dependencies**
    ```bash
@@ -39,7 +37,7 @@ A modern AI-powered video clipping tool that transforms long videos into viral s
    ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:3000`
+   Navigate to -----
 
 ## Deployment to Vercel
 
